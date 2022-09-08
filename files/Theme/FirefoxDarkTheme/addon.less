@@ -124,8 +124,19 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	background: @theme-yellow;
 	color: @theme-black;
 }
+
 .filter {
 	border: none 0;
+}
+
+.btn-selrows {
+	color: @theme-white;
+}
+
+.table td.actions .btn-action:hover,
+.btn-selrows:hover, .btn-selrows:active, .btn-selrows:focus {
+	background: darken(@theme-color3, 5%);
+	color: @theme-white;
 }
 
 .objlinks .tab-content {
@@ -216,6 +227,13 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 			color: @theme-white;
 		}
 	}
+}
+
+.ace_editor {
+	background: @theme-color2 !important;
+}
+.ace_gutter-layer, .ace_folding-enabled > .ace_gutter-cell {
+	background: @theme-color4 !important;
 }
 
 .code-editor {
