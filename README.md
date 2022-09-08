@@ -11,5 +11,5 @@
 `FirefoxDarkTheme` module definition
 ====================================
 
-
+Firefox-like **dark** theme
 
