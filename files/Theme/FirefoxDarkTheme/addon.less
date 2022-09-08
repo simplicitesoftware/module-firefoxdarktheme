@@ -179,8 +179,25 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 		border-radius: 0;
 	}
 	.editor-explore {
-		background: #EAEAEA;
+		background: @theme-color4 !important;
+		a {
+			color: @theme-white !important;
+		}
+		.module > a {
+    		background: @theme-color2 !important;
+			color: @theme-white !important;
+		}
+		.object > a {
+		    color: #f5b7b6 !important;
+		}
+		.resource > a {
+		    color: #cbebfd !important;
+		}
 	}
+}
+
+.ace_editor_embedded {
+	border-color: @theme-color5;
 }
 
 .export-data h3 {
