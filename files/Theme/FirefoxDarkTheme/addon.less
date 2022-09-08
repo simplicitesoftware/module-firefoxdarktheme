@@ -1,5 +1,6 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
+@theme-yellow: #DBD8BB;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
@@ -81,18 +82,18 @@ body {
 
 .filter {
 	border: none 0;
-	background: #D7D7AD;
+	background: @theme-yellow;
 }
 
 .badge, ul.main-menu .badge {
-	background: #BBBB99;
+	background: @theme-yellow;
 	color: #202020;
 }
 
 .alert-info {
     color: #202020;
-    background: #D7D7AD;
-    border-color: #BBBB99;
+    background: @theme-yellow;
+    border-color: darken(@theme-yellow, 20%);
 }
 
 ul.main-menu > li a:hover, ul.main-menu > li.active > a {
@@ -112,7 +113,7 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 }
 
 .panel-list .actions .btn.active, .filter {
-	background: #D7D7AD;
+	background: @theme-yellow;
 	color: @theme-black;
 }
 .filter {
