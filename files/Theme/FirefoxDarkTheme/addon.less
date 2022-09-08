@@ -48,6 +48,10 @@ body {
 	color: @theme-white;
 }
 
+.header .btn-header:hover, .header .btn-header:focus {
+	background: @theme-color4;
+}
+
 .logged-user {
 	.user-profile, .other-login, .languages, .user-logout, .zoom-bar {
     	border-bottom: solid 0.0625rem @theme-color5;
@@ -157,12 +161,27 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 .form-control,
 .searchby .form-control,
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
-	background: @theme-color4; /* ZZZ should be done by the theme editor ZZZ */
+	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
 }
 
 .reference input.ref-selectbox:focus, .reference select.ref-selectbox:focus, .reference textarea.ref-selectbox:focus, .reference.search-control.ref-selectbox:focus, .reference .markdown-html.ref-selectbox:focus {
     background-color: lighten(@field-input-reference-background, 50%);
+}
+
+.select2-dropdown {
+    background-color: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
+    border: solid 1px @theme-color5;
+}
+
+.select2-container--bootstrap .select2-results__option[aria-selected=true] {
+	background-color: @theme-color2 !important;
+	color: @theme-white !important;
+}
+
+.select2-container--bootstrap .select2-results__option--highlighted[aria-selected] .enum-item {
+	background-color: @theme-color5 !important;
+	color: @theme-white !important;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -182,6 +201,9 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 		background: @theme-color4 !important;
 		a {
 			color: @theme-white !important;
+			&:hover {
+				background: @theme-color5 !important;
+			}
 		}
 		.module > a {
     		background: @theme-color2 !important;

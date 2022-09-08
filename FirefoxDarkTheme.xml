@@ -53,4 +53,33 @@
 		<thm_const>files/Theme/FirefoxDarkTheme/const.less</thm_const>
 	</data>
 </object>
+<object>
+	<name>DispSysParam</name>
+	<action>upsert</action>
+	<data>
+		<dsp_disp_id.dis_code>default</dsp_disp_id.dis_code>
+		<dsp_param_id.sys_code>ACE_OPTIONS</dsp_param_id.sys_code>
+		<dsp_value><![CDATA[{
+	"invisibles": false,
+	"theme": "nord_dark",
+	"keybindings": "default",
+	"wrap": true
+}]]></dsp_value>
+		<dsp_param_id.sys_type>LFL</dsp_param_id.sys_type>
+		<dsp_param_id.sys_value><![CDATA[{
+	"invisibles": false,
+	"theme": "eclipse",
+	"keybindings": "default",
+	"wrap": true
+}]]></dsp_param_id.sys_value>
+		<dsp_param_id.sys_value2/>
+		<dsp_param_id.sys_desc><![CDATA[Ace editor options:
+
+- `"theme"`: `"eclipse"`, `"github"`, ...
+- `"keybindings"`: `"default"`, `"vim"` or `"emacs"`
+- `"invisibles"`: `true` or `false`
+- `"wrap"`: `true` or `false`]]></dsp_param_id.sys_desc>
+		<row_module_id.mdl_name>FirefoxDarkTheme</row_module_id.mdl_name>
+	</data>
+</object>
 </simplicite>
