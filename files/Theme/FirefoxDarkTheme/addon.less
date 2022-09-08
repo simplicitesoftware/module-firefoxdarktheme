@@ -38,6 +38,10 @@ body {
 	}
 }
 
+.top-bar .actions > img:hover {
+	background: @theme-color3;
+}
+
 .logged-scope .scope-icon > *,
 .header [data-toggle='dropdown'] .user-avatar {
 	border: solid 1px @theme-color4;
@@ -52,8 +56,11 @@ body {
 	color: @theme-white;
 }
 
-.header .btn-header:hover, .header .btn-header:focus {
-	background: @theme-color4;
+.header .btn-header {
+	border-radius: .25rem;
+	&:hover, &:focus {
+		background: @theme-color4;
+	}
 }
 
 .logged-user {
