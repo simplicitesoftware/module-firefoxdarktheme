@@ -15,6 +15,10 @@ body {
 	color: @theme-white;
 }
 
+.home-banner img {
+	filter: invert(100%);
+}
+
 .frame-wrapper {
 	border: none 0;
 	box-shadow: none;
@@ -189,7 +193,26 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 }
 
 .obj-summary {
+	background: @theme-color2;
 	color: @theme-white;
+	border: none 0;
+	.title {
+		background: inherit;
+		color: inherit;
+		border-bottom-color: @theme-color5;
+	}
+	&:hover .title {
+		background: inherit;
+		color: inherit;
+	}
+	.obj-actions {
+		background: inherit;
+		color: inherit;
+		border-top-color: @theme-color2;
+		.actions .btn {
+			color: @theme-white;
+		}
+	}
 }
 
 .code-editor {
@@ -264,4 +287,13 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 .table td, .table th {
 	color: @theme-white;
 	border-color: @theme-color5;
+}
+
+.markdown-edit {
+	.md-preview {
+		background: @theme-color4;
+	}
+	.md-ace, .md-preview {
+		border-color: @theme-color5;
+	}
 }

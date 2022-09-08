@@ -81,5 +81,15 @@
 - `"wrap"`: `true` or `false`]]></dsp_param_id.sys_desc>
 		<row_module_id.mdl_name>FirefoxDarkTheme</row_module_id.mdl_name>
 	</data>
+	<data>
+		<dsp_disp_id.dis_code>default</dsp_disp_id.dis_code>
+		<dsp_param_id.sys_code>ACE_THEME</dsp_param_id.sys_code>
+		<dsp_value><![CDATA[nord_dark]]></dsp_value>
+		<dsp_param_id.sys_type/>
+		<dsp_param_id.sys_value><![CDATA[eclipse]]></dsp_param_id.sys_value>
+		<dsp_param_id.sys_value2/>
+		<dsp_param_id.sys_desc><![CDATA[Ace editor fields' theme, e.g. `eclipse`]]></dsp_param_id.sys_desc>
+		<row_module_id.mdl_name>FirefoxDarkTheme</row_module_id.mdl_name>
+	</data>
 </object>
 </simplicite>
