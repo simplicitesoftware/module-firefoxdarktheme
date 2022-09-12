@@ -198,8 +198,16 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 	color: @theme-white;
 }
 
+textarea.form-control {
+	border: solid .0625rem @theme-color4;
+}
+
 .reference input.ref-selectbox:focus, .reference select.ref-selectbox:focus, .reference textarea.ref-selectbox:focus, .reference.search-control.ref-selectbox:focus, .reference .markdown-html.ref-selectbox:focus {
     background-color: lighten(@field-input-reference-background, 50%);
+}
+
+.form-control:disabled, .select2-container--bootstrap .select2-selection:disabled, .form-control[readonly], .select2-container--bootstrap .select2-selection[readonly], .form-control[disabled], .select2-container--bootstrap .select2-selection[disabled] {
+	color: @theme-white;
 }
 
 .select2-dropdown {
@@ -215,6 +223,10 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] .enum-item {
 	background-color: @theme-color5 !important;
 	color: @theme-white !important;
+}
+
+.btn-switch .slider {
+    border-color: @theme-color4;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
