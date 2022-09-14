@@ -171,12 +171,16 @@ td.workkey {
     background: #7A4444 !important;
 }
 
+.table > tbody > tr.selected > td, .table > tbody > tr.active > td {
+    background: darken(@theme-yellow, 20%);
+}
+
 .objlinks .tab-content {
     background: @theme-color4;
 }
 
 .objform .markdown-html {
-    border: solid 0.0625rem @theme-color4;
+    border: solid .0625rem @theme-color4;
 }
 
 .btn-plus, .btn-icon, .btn-extend {
