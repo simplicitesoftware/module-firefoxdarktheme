@@ -1,6 +1,7 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
 @theme-yellow: #DBD8BB;
+@theme-blue: #80BdFF;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
@@ -16,7 +17,7 @@ body {
 }
 
 a, a:hover, a:active, a:focus {
-	color: #B4D8FF;
+	color: @theme-blue;
 }
 
 .home-banner img {
@@ -208,9 +209,17 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
 	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
+	&:focus {
+		color: inherit;
+		background: inherit;
+	    border: solid 1px @theme-blue;
+	    box-shadow: 0 0 .2rem @theme-blue;
+	}
 }
 
 textarea.form-control {
+	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
+	color: @theme-white;
 	border: solid .0625rem @theme-color4;
 }
 
@@ -401,4 +410,48 @@ textarea.form-control {
 
 .flow-xml .table td {
 	background: @theme-color2;
+}
+
+.notepad, .doc-multi {
+    border: solid 0.0625rem @theme-color4;
+}
+
+.notepad .act:hover, .notepad .checklist:hover {
+	background-color: @theme-color5;
+}
+
+.notepad .checklist-item:hover {
+	background: @theme-color4;
+}
+
+.notepad .act .text {
+	background: @theme-color4;
+}
+
+.notepad.split .checklists {
+    border-right: solid 0.0625rem @theme-color4;
+}
+
+.dock-zone > .tmpl-new > .new-menu {
+    background: @theme-color4 !important;
+    box-shadow: 0.4rem 0.4rem 0.6rem 0 @theme-color2 !important;
+    border: solid 1px @theme-color5 !important;
+}
+
+.dock-zone > .tmpl-new > .new-menu>div {
+    border: solid 1px @theme-color5 !important;
+    &:hover {
+    	background: @theme-color5 !important;
+    }
+}
+
+.tmpl-selector .newfield > div[data-field] {
+	background: @theme-color4 !important;
+	&:hover {
+		background: @theme-color5 !important;
+	}
+}
+
+.tmpl-selector .tmpl-form {
+	background-color: transparent !important;
 }
