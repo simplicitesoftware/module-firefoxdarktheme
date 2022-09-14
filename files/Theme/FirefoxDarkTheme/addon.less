@@ -382,44 +382,6 @@ textarea.form-control {
 	}
 }
 
-.module-delete {
-	background: @theme-color4 !important;
-	.info, .error {
-		background: @theme-color1 !important;
-		border-color: @theme-color5 !important;
-	}
-}
-
-.db-access {
-	background: @theme-color4;
-	color: @theme-white;
-	.editor {
-		border-color: @theme-color5;
-	}
-}
-
-.git-diff .v0 {
-	background: @theme-color2;
-}
-
-.modeler_picker > .items .item .mdl {
-    background: @theme-color2;
-    border: solid .0625rem @theme-color4;
- }
- 
-.modeler_picker > .items .item .mdl .title {
-    background: @theme-color2;
-    border: solid .0625rem @theme-color4;
-}
-
-.model-desktop > .palette {
-	color: @theme-black;
-}
-
-.diagram {
-    background-color: #ECECEC !important;
-}
-
 .flow-xml .table td {
 	background: @theme-color5;
 }
@@ -453,6 +415,29 @@ textarea.form-control {
     background-color: @theme-color5;
 }
 
+/* Modeler */
+
+.modeler_picker > .items .item .mdl {
+    background: @theme-color2;
+    border: solid .0625rem @theme-color4;
+ }
+ 
+.modeler_picker > .items .item .mdl .title {
+    background: @theme-color2;
+    border: solid .0625rem @theme-color4;
+}
+
+.model-desktop > .palette {
+	color: @theme-black;
+}
+
+.diagram {
+    background-color: #ECECEC !important;
+}
+
+
+/* Template editor */
+
 .dock-zone > .tmpl-new > .new-menu {
     background: @theme-color4 !important;
     box-shadow: .4rem .4rem .6rem @theme-color2 !important;
@@ -475,4 +460,45 @@ textarea.form-control {
 
 .tmpl-selector .tmpl-form {
 	background-color: transparent !important;
+}
+
+/* Other components */
+
+.module-delete {
+	background: @theme-color4 !important;
+	.info, .error {
+		background: @theme-color1 !important;
+		border-color: @theme-color5 !important;
+	}
+}
+
+.module-chooser .module {
+	background: @theme-color3;
+	border-color: @theme-color5;
+	&:hover {
+		background: @theme-color2;
+	}
+}
+
+.db-access {
+	background: @theme-color4;
+	color: @theme-white;
+	.editor {
+		border-color: @theme-color5;
+	}
+}
+
+.git-diff .v0 {
+	background: @theme-color2;
+}
+
+/* Fullcalendar */
+
+:root {
+	--fc-border-color: @theme-color5;
+}
+
+.fc-button-primary, .fc-button-primary:disabled {
+	color: inherit !important;
+	border-color: @theme-color5 !important;
 }
