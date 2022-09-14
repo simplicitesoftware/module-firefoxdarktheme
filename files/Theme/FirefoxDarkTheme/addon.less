@@ -1,6 +1,9 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
-@theme-yellow: #DBD8BB;
+@theme-yellow: /*#DBD8BB*/#B3B098;
+@theme-green: #ABB6AE;
+@theme-orange: #D6BD9A;
+@theme-red: #CC9fA3;
 @theme-blue: #80BDFF;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
@@ -141,6 +144,18 @@ a.btn-header.btn-shortcut {
     color: #202020;
     background: @theme-yellow;
     border-color: darken(@theme-yellow, 20%);
+}
+.alert-danger {
+    background: @theme-red;
+    border-color: darken(@theme-red, 20%);
+}
+.alert-warning {
+    background: @theme-orange;
+    border-color: darken(@theme-orange, 20%);
+}
+.alert-success {
+    background: @theme-green;
+    border-color: darken(@theme-green, 20%);
 }
 
 ul.main-menu > li a:hover, ul.main-menu > li.active > a {
