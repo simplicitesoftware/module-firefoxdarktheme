@@ -6,7 +6,7 @@
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
 @theme-color4: #42414D;
-@theme-color5: #5C5B64;
+@theme-color5: /*#5C5B64*/#575562;
 
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
@@ -168,6 +168,32 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	border: none 0;
 }
 
+.search {
+	.index-search, .predef-search {
+		background: transparent;
+		input {
+			background: inherit;
+		}
+	}
+	.nav {
+		background: transparent;
+	}
+	.toggle-title {
+		background: transparent;
+		color: @theme-white;
+	}
+	.predef-search {
+		.item {
+			border-color: @theme-color4;
+		}
+		.item.private {
+			background: @theme-color4;
+			border-color: @theme-color5;
+		}
+	}
+}
+
+
 .table > tbody > tr > td div.enum.enum-tag {
 	border-radius: 1rem;
 }
@@ -225,6 +251,11 @@ tr.group-by-title > td, .obj-grid > .group-by-title {
 
 .form-navbar .btn-first, .form-navbar .btn-prev, .form-navbar .btn-next, .form-navbar .btn-last {
 	color: @theme-white;
+}
+
+select, select option {
+    background: @theme-color5;
+    color: @theme-white;
 }
 
 .form-control,
