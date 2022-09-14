@@ -510,7 +510,7 @@ textarea.form-control {
 }
 
 tmpl-edit .drag {
-	background: @theme-color5;
+	background: @theme-color5 !important;
 }
 
 .tmpl-selector .newfield > div[data-field] {
@@ -520,8 +520,22 @@ tmpl-edit .drag {
 	}
 }
 
+.tmpl-selector .newfield > div {
+	border-color: @theme-color3 !important;
+	&:hover {
+		background: @theme-color5 !important;
+	}
+}
+
 .tmpl-selector .tmpl-form {
 	background-color: transparent !important;
+}
+
+.tmpl-selector > ul li {
+	background: transparent !important;
+	&:hover {
+		background: @theme-color5 !important;
+	}
 }
 
 /* Other components */
