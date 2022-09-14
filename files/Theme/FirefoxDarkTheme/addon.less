@@ -11,13 +11,26 @@
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
 
+/* Global */
+
 body {
 	background: @theme-color1;
 	color: @theme-white;
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: @theme-color4;
+}
+
 a, a:hover, a:active, a:focus {
 	color: @theme-blue;
+}
+
+.close {
+	color: @theme-white;
+	&:hover {
+		color: @theme-white;
+	}
 }
 
 .home-banner img {
@@ -32,15 +45,15 @@ a, a:hover, a:active, a:focus {
 	}
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: @theme-color4;
+.header .main-nav-toggle:hover {
+    background: @theme-color4;
+    color: @theme-white;
+    border-radius: 50%;
 }
 
-.close {
-	color: @theme-white;
-	&:hover {
-		color: @theme-white;
-	}
+a.btn-header.btn-shortcut {
+    padding: .25rem .4rem;
+    border-radius: 50%;
 }
 
 .top-bar .actions > img:hover {
@@ -65,6 +78,7 @@ a, a:hover, a:active, a:focus {
 .logged-scope .scope-name, .logged-user .user-name {
 	font-size: 1rem;
 }
+
 .card-header h4 {
     font-size: 1rem;
 }
@@ -72,7 +86,8 @@ a, a:hover, a:active, a:focus {
 .header .btn-header {
 	border-radius: .25rem;
 	&:hover, &:focus {
-		background: @theme-color4;
+		background: @theme-color4 !important;
+		color: @theme-white !important;
 	}
 }
 
