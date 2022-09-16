@@ -296,6 +296,21 @@ textarea.form-control {
 	border: solid .0625rem @theme-color4;
 }
 
+.datetimepicker, .datetimepicker-hours, .datetimepicker-minutes {
+	table {
+		color: @theme-white;
+		tr {
+			td:hover, th:hover {
+				background: @theme-color5 !important;
+				span:hover {
+					background: @theme-color4 !important;
+				}
+			}
+		}
+	}
+}
+.datetimepicker-hours
+
 .searchby .form-control {
 	background: @theme-color5;
 }
@@ -638,6 +653,11 @@ textarea.form-control {
 }
 
 /* Other components */
+
+.web-news {
+	background: @theme-color4;
+	border-color: @theme-color5;
+}
 
 .module-delete {
 	background: @theme-color4 !important;
