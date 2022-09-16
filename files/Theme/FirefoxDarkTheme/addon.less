@@ -280,33 +280,34 @@ select, select option {
 .form-control,
 .searchby .form-control,
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
-	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
-	color: @theme-white;
+	background: @field-input-background !important; /* ZZZ should be done by the theme editor ZZZ */
+	color: @theme-white !important;
+	border-color: @theme-color5 !important;
 	&:focus {
-		color: inherit;
-		background: inherit;
-		border: solid 1px @theme-blue;
-		box-shadow: 0 0 .2rem @theme-blue;
+		background: @field-input-background !important;
+		color: @theme-white !important;
+		border: solid 1px @theme-blue !important;
+		box-shadow: 0 0 .2rem @theme-blue !important;
 	}
 }
 
 .select2-container--bootstrap .select2-search--dropdown .select2-search__field {
-	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
-	color: @theme-white;
+	background: @field-input-background !important; /* ZZZ should be done by the theme editor ZZZ */
+	color: @theme-white !important;
 	font-size: inherit; /* ZZZ should be standard */
-	border: solid .0625rem @theme-color5;
+	border: solid .0625rem @theme-color5 !important;
 }
 
 .select2-container--bootstrap .select2-selection--multiple .select2-selection__choice {
-	background: @theme-color3;
-	color: @theme-white;
-	border: solid .0625rem @theme-color5;
+	background: @theme-color3 !important;
+	color: @theme-white !important;
+	border: solid .0625rem @theme-color5 !important;
 }
 
 textarea.form-control {
-	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
-	color: @theme-white;
-	border: solid .0625rem @theme-color4;
+	background: @field-input-background !important; /* ZZZ should be done by the theme editor ZZZ */
+	color: @theme-white !important;
+	border: solid .0625rem @theme-color5 !important;
 }
 
 .datetimepicker, .datetimepicker-hours, .datetimepicker-minutes {
@@ -556,7 +557,7 @@ textarea.form-control {
 	background-color: #ECECEC !important;
 }
 
-
+d
 /* Template editor */
 
 .dock-zone > .tmpl-new > .new-menu {
@@ -673,6 +674,10 @@ textarea.form-control {
 	background: transparent;
 }
 
+.follow .item:hover {
+	background: @theme-color5;
+}
+
 .follow .item > .follow-title {
 	color: @theme-white;
 }
@@ -691,6 +696,10 @@ textarea.form-control {
 	&:hover {
 		background: @theme-color5;
 	}
+}
+
+.social .post .msg {
+	background: transparent;
 }
 
 /* Other components */
@@ -731,6 +740,10 @@ textarea.form-control {
 	.v1, .v2, .v3 {
 		color: @theme-black;
 	}
+}
+
+.hljs {
+   background: #ECECEC;
 }
 
 .import-xml {
