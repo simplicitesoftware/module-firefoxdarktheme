@@ -290,6 +290,13 @@ select, select option {
 	}
 }
 
+.select2-container--bootstrap .select2-search--dropdown .select2-search__field {
+	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
+	color: @theme-white;
+	font-size: inherit; /* ZZZ should be standard */
+	border: solid .0625rem @theme-color5;
+}
+
 textarea.form-control {
 	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
@@ -309,7 +316,27 @@ textarea.form-control {
 		}
 	}
 }
-.datetimepicker-hours
+
+.color-picker.dd {
+	border-color: @theme-color5;
+}
+
+.sp-picker-container {
+	border-left: solid 1px @theme-color5 !important;
+}
+.sp-palette-container {
+	border-right: solid 1px @theme-color5 !important;
+}
+
+.sp-input {
+	background: @field-input-background !important;
+	color: @theme-white !important;
+	border: solid 1px @theme-color5 !important;
+	font-family: monospace;
+	&:focus {
+		border: solid 1px @theme-blue !important;
+	}
+}
 
 .searchby .form-control {
 	background: @theme-color5;
