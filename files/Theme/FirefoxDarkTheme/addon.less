@@ -1,6 +1,6 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
-@theme-yellow: /*#DBD8BB*/#B3B098;
+@theme-yellow: #B3B098;
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
 @theme-red: #CC9fA3;
@@ -664,6 +664,32 @@ textarea.form-control {
 		background: @theme-color2;
 		color: @theme-white;
 		border-color: @theme-color5;
+	}
+}
+
+/* Icon picker */
+
+.icon-picker {
+	.tabs.tabs-underline > .nav-tabs .nav-link.active, .tabs-underline > .tabs > .nav-tabs .nav-link.active,
+	.tabs.tabs-underline > .nav-tabs .nav-link.active:hover, .tabs-underline > .tabs > .nav-tabs .nav-link.active:hover,
+	.tabs.tabs-underline > .nav-tabs .nav-link.active:focus, .tabs-underline > .tabs > .nav-tabs .nav-link.active:focus {
+		background: @theme-color4;
+		color: @theme-white;
+		border-color: transparent;
+	}
+	.tabs.tabs-underline > .nav-tabs .nav-link, .tabs-underline > .tabs > .nav-tabs .nav-link {
+		background: transparent;
+		color: @theme-white;
+		border-color: @theme-color5;
+	}
+	.tabs.tabs-underline > .nav-tabs .nav-link:hover, .tabs-underline > .tabs > .nav-tabs .nav-link:hover,
+	.tabs.tabs-underline > .nav-tabs .nav-link:focus, .tabs-underline > .tabs > .nav-tabs .nav-link:focus {
+		background: @theme-color4;
+		color: @theme-white;
+		border-color: @theme-color5;
+	}
+	.form-control {
+		background: transparent;
 	}
 }
 

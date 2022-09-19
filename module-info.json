@@ -1,9 +1,9 @@
 {
-    "date": "2022-09-19 12:37:00",
+    "date": "2022-09-19 22:57:38",
     "name": "FirefoxDarkTheme",
     "format": "xml",
     "files": ["FirefoxDarkTheme.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-firefoxdarktheme.git"}},
     "version": "5",
-    "platform": "5.2.14"
+    "platform": "5.2.15-preview"
 }
