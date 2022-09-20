@@ -1,5 +1,6 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
+@theme-grey: #ECECEC;
 @theme-yellow: #B3B098;
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
@@ -248,6 +249,12 @@ td.workkey {
 
 .objform .markdown-html {
     border: solid .0625rem @theme-color4;
+}
+
+.markdown-html pre {
+	background: @theme-grey;
+	border-radius: .25rem;
+	box-shadow: .5rem .5rem 1rem @theme-color1;
 }
 
 .btn-plus, .btn-icon, .btn-extend {
@@ -563,7 +570,7 @@ textarea.form-control {
 }
 
 .diagram {
-	background-color: #ECECEC !important;
+	background-color: @theme-grey !important;
 }
 
 /* Template editor */
@@ -789,7 +796,7 @@ textarea.form-control {
 }
 
 .hljs {
-   background: #ECECEC;
+   background: @theme-grey;
 }
 
 .import-xml {
