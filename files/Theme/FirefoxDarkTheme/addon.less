@@ -404,9 +404,14 @@ textarea.form-control {
 }
 
 .obj-summary {
-	background: @theme-color4;
+	background: @theme-color3;
 	color: @theme-white;
-	border: none 0;
+	border: solid .0625rem @theme-color5;
+	box-shadow: .25rem .25rem .5rem @theme-color1;
+	&:hover {
+		background: @theme-color5;
+		box-shadow: .25rem .25rem .5rem @theme-color1 !important;
+	}
 	.title {
 		background: inherit;
 		color: inherit;
@@ -419,9 +424,12 @@ textarea.form-control {
 	.obj-actions {
 		background: inherit;
 		color: inherit;
-		border-top-color: @theme-color2;
+		border-top: solid .0625rem @theme-color5;
 		.actions .btn {
 			color: @theme-white;
+			&:hover {
+				background: @theme-color2;
+			}
 		}
 	}
 }
