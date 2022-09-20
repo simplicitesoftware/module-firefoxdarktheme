@@ -5,7 +5,7 @@
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
 @theme-red: #CC9fA3;
-@theme-blue: #80BDFF;
+@theme-blue: #00d3E7/*#80BDFF*/;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
@@ -140,14 +140,16 @@ a.btn-header.btn-shortcut {
 }
 
 .badge, ul.main-menu .badge {
-	background: @theme-yellow;
+	background: @theme-blue/*@theme-yellow*/;
 	color: #202020;
 }
 
 .alert-info {
 	color: #202020;
-	background: @theme-yellow;
-	border-color: darken(@theme-yellow, 25%);
+	/*background: @theme-yellow;
+	border-color: darken(@theme-yellow, 25%);*/
+	background: darken(@theme-blue, 10%);
+	border-color: darken(@theme-blue, 25%);
 }
 .alert-danger {
 	color: #202020;
@@ -226,6 +228,13 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 
 .table > tbody > tr > td div.enum.enum-tag {
 	border-radius: 1rem;
+}
+
+.btn-primary {
+	border-color: #216d82;
+	&:hover {
+		border-color: #216d82;
+	}
 }
 
 .btn-default, .btn-secondary {
@@ -399,6 +408,14 @@ textarea.form-control {
     border-color: @theme-color4;
 }
 
+.btn-switch input:checked + .slider {
+	background: @theme-blue;
+}
+
+.progress-bar {
+	background-color: darken(@theme-blue, 10%);
+}
+
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
 	border-color: transparent;
 }
@@ -462,7 +479,7 @@ textarea.form-control {
 			color: #f5b7b6 !important;
 		}
 		.resource > a {
-			color: #cbebfd !important;
+			color: /*#cbebfd*/darken(@theme-blue, 10%) !important;
 		}
 	}
 }
@@ -511,6 +528,10 @@ textarea.form-control {
 
 .sysinfos .users, .sysinfos .jobs {
 	border-color: @theme-color5;
+}
+
+.sysinfos .alert-info {
+	background-color: @theme-color2;
 }
 
 .table td, .table th {
