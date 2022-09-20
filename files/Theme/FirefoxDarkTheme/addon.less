@@ -162,6 +162,10 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	font-weight: bold;
 }
 
+.floating-bar {
+    box-shadow: 0 .3125rem 1.875rem @theme-color1;
+}
+
 .list-shortcuts {
 	.item {
 		background: @theme-color2;
@@ -280,13 +284,14 @@ select, select option {
 .form-control,
 .searchby .form-control,
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
-	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
+	background: /*@field-input-background*/inherit; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
-	border-color: @theme-color5;
+	border: none 0;
+	border-bottom: solid .0625rem @theme-color5;
 	&:focus {
-		background: @field-input-background;
+		background: /*@field-input-background*/inherit;
 		color: @theme-white;
-		border: solid 1px @theme-blue;
+		border: solid .0625rem @theme-blue;
 		box-shadow: 0 0 .2rem @theme-blue;
 	}
 }
@@ -305,7 +310,7 @@ select, select option {
 }
 
 textarea.form-control {
-	background: @field-input-background; /* ZZZ should be done by the theme editor ZZZ */
+	background: /*@field-input-background*/inherit; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
 	border: solid .0625rem @theme-color5;
 }
@@ -331,6 +336,7 @@ textarea.form-control {
 .sp-picker-container {
 	border-left: solid 1px @theme-color5 !important;
 }
+
 .sp-palette-container {
 	border-right: solid 1px @theme-color5 !important;
 }
@@ -619,6 +625,10 @@ textarea.form-control {
 
 .tmpl-form .colmodels > .custom input {
 	background: @field-input-background !important;
+}
+
+.tmpl-desk.on .objlinks::after, .tmpl-desk.on .view-embedded::after {
+	background: @theme-color5;
 }
 
 /* Pivot tables */
