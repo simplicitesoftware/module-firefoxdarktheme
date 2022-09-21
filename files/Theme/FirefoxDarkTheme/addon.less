@@ -5,12 +5,13 @@
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
 @theme-red: #CC9fA3;
-@theme-blue: #00d3E7/*#80BDFF*/;
+@theme-blue: /*#00D3E7*/#80BDFF;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
 @theme-color4: #42414D;
 @theme-color5: #575562;
+@theme-help: #E1DFCE;
 
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
@@ -139,28 +140,34 @@ a.btn-header.btn-shortcut {
 	background: @theme-yellow;
 }
 
-.badge, ul.main-menu .badge {
+.badge, ul.main-menu .badge, .card-header .badge {
 	background: @theme-blue/*@theme-yellow*/;
 	color: #202020;
 }
 
+.alert-help {
+    background: @theme-help !important;
+    border-color: darken(@theme-help, 20%) !important;
+}
+
 .alert-info {
 	color: #202020;
-	/*background: @theme-yellow;
-	border-color: darken(@theme-yellow, 25%);*/
-	background: darken(@theme-blue, 10%);
-	border-color: darken(@theme-blue, 25%);
+	background: @theme-yellow;
+	border-color: darken(@theme-yellow, 25%);
 }
+
 .alert-danger {
 	color: #202020;
 	background: @theme-red;
 	border-color: darken(@theme-red, 25%);
 }
+
 .alert-warning {
 	color: #202020;
 	background: @theme-orange;
 	border-color: darken(@theme-orange, 25%);
 }
+
 .alert-success {
 	color: #202020;
 	background: @theme-green;
@@ -225,16 +232,8 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	background: transparent;
 }
 
-
 .table > tbody > tr > td div.enum.enum-tag {
 	border-radius: 1rem;
-}
-
-.btn-primary {
-	border-color: #216d82;
-	&:hover {
-		border-color: #216d82;
-	}
 }
 
 .btn-default, .btn-secondary {
