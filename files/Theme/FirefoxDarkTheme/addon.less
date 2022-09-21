@@ -1,17 +1,16 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
 @theme-grey: #ECECEC;
-@theme-yellow: #B3B098;
+@theme-yellow: /*#B3B098*/#E1DFCE;
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
 @theme-red: #CC9fA3;
-@theme-blue: /*#00D3E7*/#80BDFF;
+@theme-blue: #80BDFF;
 @theme-color1: #1C1B22;
 @theme-color2: #2B2A33;
 @theme-color3: #3E3D47;
 @theme-color4: #42414D;
 @theme-color5: #575562;
-@theme-help: #E1DFCE;
 
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
@@ -146,8 +145,8 @@ a.btn-header.btn-shortcut {
 }
 
 .alert-help {
-    background: @theme-help !important;
-    border-color: darken(@theme-help, 20%) !important;
+    background: @theme-yellow !important;
+    border-color: darken(@theme-yellow, 20%) !important;
 }
 
 .alert-info {
@@ -332,6 +331,11 @@ select, select option {
 	background: @theme-color3;
 	color: @theme-white;
 	border: solid .0625rem @theme-color5;
+}
+
+.select2-container--bootstrap.select2-container--disabled .select2-selection,
+.select2-container--bootstrap.select2-container--disabled .select2-selection--multiple .select2-selection__choice {
+	background: @theme-color4; /* ZZZ should be done by the theme editor ZZZ */
 }
 
 textarea.form-control {
