@@ -507,6 +507,7 @@ textarea.form-control {
 
 .sysinfos .alert-info {
 	background-color: @theme-color2;
+	color: @theme-grey;
 }
 
 .table td, .table th {
@@ -918,4 +919,56 @@ textarea.form-control {
 
 .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header {
 	background: @theme-color4;
+}
+
+/* App store */
+
+.store-container {
+	background: @theme-color4 !important;
+}
+
+.storecard__content {
+	background: @theme-color5 !important;
+}
+
+.storecard__header {
+	color: @theme-white !important;
+}
+
+.storecard__text {
+	color: @theme-grey !important;
+}
+
+/* Monitoring page */
+
+.backend-monitor {
+	.head {
+		background: @theme-color5 !important;
+		color: @theme-white !important;
+		.views {
+			.tab.active {
+				background: @theme-color4 !important;
+				color: @theme-white !important;
+			}
+			.tab {
+				background: transparent !important;
+				color: inherit !important;
+			}
+		}
+	}
+	.tabs {
+		background: @theme-color4 !important;
+		color: @theme-white;
+		.btn {
+			background: @theme-color5 !important;
+			color: @theme-white !important;
+		}
+		.cldata {
+			background: @theme-color5 !important;
+			color: @theme-white !important;
+			h3 {
+				color: @theme-black !important;
+			}
+		}
+	}
 }
