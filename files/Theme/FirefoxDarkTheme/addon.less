@@ -239,6 +239,10 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	border-radius: 1rem;
 }
 
+.container-table.upsert .col-action {
+	background: @theme-color2 !important;
+}
+
 .btn-default, .btn-secondary {
 	background: transparent;
 }
@@ -761,6 +765,10 @@ textarea.form-control {
 		color: @theme-white;
 		border-color: @theme-color5;
 	}
+	.chart-option .charts > [data-type].active {
+		color: @theme-black;
+		background: @theme-yellow;
+	}
 }
 
 /* Icon picker & monitor pane */
@@ -914,11 +922,11 @@ textarea.form-control {
 .fc-unthemed .fc-content, .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td,
 .fc-unthemed .fc-list-view, .fc-unthemed .fc-popover, .fc-unthemed .fc-row,
 .fc-unthemed tbody, .fc-unthemed td, .fc-unthemed th, .fc-unthemed thead {
-	border-color: @theme-color5;
+	border-color: @theme-color5 !important;
 }
 
 .fc-unthemed .fc-divider, .fc-unthemed .fc-list-heading td, .fc-unthemed .fc-popover .fc-header {
-	background: @theme-color4;
+	background: @theme-color4 !important;
 }
 
 /* App store */
