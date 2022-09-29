@@ -1,7 +1,7 @@
 @theme-white: #FFFFFF;
 @theme-black: #000000;
 @theme-grey: #ECECEC;
-@theme-yellow: /*#B3B098*/#E1DFCE;
+@theme-yellow: #E1DFCE;
 @theme-green: #ABB6AE;
 @theme-orange: #D6BD9A;
 @theme-red: #CC9fA3;
@@ -318,19 +318,21 @@ select, select option {
 	color: @theme-white;
 }
 
-.form-control,
-.searchby .form-control,
+.form-control, .searchby .form-control,
 .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
 	background: /*@field-input-background*/inherit; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
 	border: none 0;
-	border-bottom: solid .0625rem @theme-color5;
 	&:focus {
 		background: /*@field-input-background*/inherit;
 		color: @theme-white;
 		border: solid .0625rem @theme-blue;
 		box-shadow: 0 0 .2rem @theme-blue;
 	}
+}
+.form-control, .searchby .form-control,
+.select2-container--bootstrap {
+	border-bottom: solid .0625rem @theme-color5;
 }
 
 .select2-container--bootstrap .select2-search--dropdown .select2-search__field {
