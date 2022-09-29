@@ -86,6 +86,10 @@ a.btn-header.btn-shortcut {
 	font-size: 1rem;
 }
 
+ul.sub-menu a.menu-sel::before {
+	background: @theme-blue;
+}
+
 .card-header h4 {
     font-size: 1rem;
 }
@@ -140,7 +144,7 @@ a.btn-header.btn-shortcut {
 }
 
 .badge, ul.main-menu .badge, .card-header .badge {
-	background: @theme-blue/*@theme-yellow*/;
+	background: @theme-blue;
 	color: #202020;
 }
 
@@ -605,10 +609,10 @@ textarea.form-control {
 			color: @theme-white !important;
 		}
 		.object > a {
-			color: #f5b7b6 !important;
+			color: lighten(@theme-orange, 10%) !important;
 		}
 		.resource > a {
-			color: /*#cbebfd*/darken(@theme-blue, 10%) !important;
+			color: lighten(@theme-blue, 10%) !important;
 		}
 	}
 }
