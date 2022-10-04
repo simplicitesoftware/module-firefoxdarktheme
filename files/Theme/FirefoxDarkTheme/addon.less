@@ -11,6 +11,7 @@
 @theme-color3: #3E3D47;
 @theme-color4: #42414D;
 @theme-color5: #575562;
+@theme-color6: #647283;
 
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
@@ -154,7 +155,7 @@ ul.sub-menu a.menu-sel::before {
 
 .alert-help {
     background: @theme-yellow !important;
-    border-color: darken(@theme-yellow, 20%) !important;
+    border-color: darken(@theme-yellow, 25%) !important;
 }
 
 .alert-info {
@@ -202,8 +203,8 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 }
 
 .panel-list .actions .btn.active, .filter {
-	background: @theme-yellow;
-	color: @theme-black;
+	background: @theme-color6;
+	color: @theme-white;
 }
 
 .filter {
@@ -271,7 +272,7 @@ td.workkey {
 }
 
 .table > tbody > tr.selected > td, .table > tbody > tr.active > td {
-	background: darken(@theme-yellow, 30%);
+	background: @theme-color6;
 }
 
 .objlinks .tab-content {
@@ -826,13 +827,13 @@ textarea.form-control {
 
 .social {
 	.post.focus {
-		background: darken(@theme-yellow, 20%);
+		background: @theme-color6;
 	}
 	.post {
 		background: @theme-color4;
 	}
 	.post.owner {
-		background: darken(@theme-yellow, 30%);
+		background: darken(@theme-color6, 10%);
 	}
 	.post.info {
 	    background: #555368;
