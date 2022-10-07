@@ -59,6 +59,12 @@ a, a:hover, a:active, a:focus {
 	border-radius: 50%;
 }
 
+.header .searchbox {
+	&.focus input, &.focus .btn {
+		color: @theme-white;
+	}
+}
+
 a.btn-header.btn-shortcut {
 	padding: .25rem .4rem;
 	border-radius: 50%;
@@ -368,6 +374,11 @@ textarea.form-control {
 	background: /*@field-input-background*/inherit; /* ZZZ should be done by the theme editor ZZZ */
 	color: @theme-white;
 	border: solid .0625rem @theme-color5;
+}
+
+/* Type URL */
+input[data-type="10"] {
+	font-family: monospace;
 }
 
 .datetimepicker, .datetimepicker-hours, .datetimepicker-minutes {
