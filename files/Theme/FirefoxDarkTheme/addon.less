@@ -756,12 +756,16 @@ input[data-type="10"] {
 	table thead th, .table thead th {
 		border: solid .0625rem @theme-color5;
 	}
-	.table-caption .table > thead > tr > th.ctcol {
-		background: @theme-color4;
-		border-color: @theme-color5;
-	}
-	.table-caption .table > tbody > tr > td.ctcell, .table-caption .table > tbody > tr.total > td.ctcell {
-		border-color: @theme-color5;
+	.table-caption {
+		color: @theme-white;
+		.table > thead > tr > th.ctcol {
+			background: @theme-color4;
+			border-color: @theme-color5;
+		}
+		.table > tbody > tr > td.ctcell,
+		.table > tbody > tr.total > td.ctcell {
+			border-color: @theme-color5;
+		}
 	}
 	.table > tbody > tr > td {
 		border: dotted .0625rem @theme-color5;
