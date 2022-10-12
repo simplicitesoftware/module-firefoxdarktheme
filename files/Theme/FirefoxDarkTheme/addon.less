@@ -15,6 +15,7 @@
 
 @background-dark: @theme-color1;
 @background-light: @theme-color2;
+@active-color: @theme-yellow;
 
 /* Global */
 
@@ -489,6 +490,19 @@ input[data-type="10"] {
 			}
 		}
 	}
+}
+
+.tray-footer {
+	.btn {
+		color: @theme-black;
+	}
+}
+.tray .tray-item {
+	.actors > .actor {
+		background: @theme-color5;
+		color: @theme-white;
+	}
+	/* TODO: hover background color */
 }
 
 .export-data h3 {
