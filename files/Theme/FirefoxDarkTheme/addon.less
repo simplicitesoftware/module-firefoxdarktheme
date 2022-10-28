@@ -61,8 +61,15 @@ a, a:hover, a:active, a:focus {
 }
 
 .header .searchbox {
-	&.focus input, &.focus .btn {
-		color: @theme-white;
+	input {
+		margin-top: .15rem;
+		background-color: transparent;
+	}
+	&.focus {
+		input, .btn {
+			color: @theme-white;
+			background-color: transparent;
+		}
 	}
 }
 
@@ -218,11 +225,6 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	border: none 0;
 }
 
-.header .searchbox.focus {
-	input, .btn {
-		background-color: transparent;
-	}
-}
 .search {
 	.index-search, .predef-search {
 		background: transparent;
