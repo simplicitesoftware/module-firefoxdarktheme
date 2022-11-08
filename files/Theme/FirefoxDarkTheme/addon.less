@@ -435,6 +435,10 @@ input[data-type="10"] {
 
 .form-control:disabled, .select2-container--bootstrap .select2-selection:disabled, .form-control[readonly], .select2-container--bootstrap .select2-selection[readonly], .form-control[disabled], .select2-container--bootstrap .select2-selection[disabled] {
 	color: @theme-white;
+	&:focus {
+		background: @theme-color4;
+		box-shadow: none;
+	}
 }
 
 .select2-dropdown {
