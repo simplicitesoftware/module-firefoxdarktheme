@@ -285,7 +285,9 @@ td.workkey {
 	background: #7A4444 !important;
 }
 
-.table > tbody > tr.selected > td, .table > tbody > tr.active > td {
+.table > tbody > tr.active > td,
+.table > tbody > tr.selected > td,
+.table > tbody > tr.selected:nth-of-type(odd) > td {
 	background: @theme-color6;
 }
 
