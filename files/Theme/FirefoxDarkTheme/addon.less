@@ -270,6 +270,10 @@ ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	color: @theme-white;
 }
 
+.table td.actions .btn-action {
+	background-color: transparent;
+}
+
 .table td.actions .btn-action:hover,
 .btn-selrows:hover, .btn-selrows:active, .btn-selrows:focus {
 	background: darken(@theme-color3, 5%);
@@ -968,6 +972,9 @@ input#field_fld_dbname {
 	}
 }
 
+.table.git-history > :not(caption) > * > * { /* override BS5 */
+	padding: 0;
+}
 .git-diff {
 	.v0 {
 		background: @theme-color2;
