@@ -106,7 +106,7 @@ ul.sub-menu a.menu-sel::before {
 }
 
 .card-header h4 {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 
 .header .btn-header {
@@ -168,8 +168,8 @@ ul.sub-menu a.menu-sel::before {
 }
 
 .alert-help {
-    background: @theme-yellow !important;
-    border-color: darken(@theme-yellow, 25%) !important;
+	background: @theme-yellow !important;
+	border-color: darken(@theme-yellow, 25%) !important;
 }
 
 .alert-info {
@@ -196,12 +196,17 @@ ul.sub-menu a.menu-sel::before {
 	border-color: darken(@theme-green, 25%);
 }
 
+.mono.fatal, .mono.error, .mono.warning, .mono.info {
+	color: @theme-black;
+	padding: .5rem;
+}
+
 ul.main-menu > li a:hover, ul.main-menu > li.active > a {
 	font-weight: bold;
 }
 
 .floating-bar {
-    box-shadow: 0 .3125rem 1.875rem @theme-color1;
+	box-shadow: 0 .3125rem 1.875rem @theme-color1;
 }
 
 .list-shortcuts {
@@ -300,7 +305,7 @@ td.workkey {
 }
 
 .objform .markdown-html {
-    border: solid .0625rem @theme-color4;
+	border: solid .0625rem @theme-color4;
 }
 
 .markdown-html pre {
@@ -397,7 +402,7 @@ input[data-type="10"] {
 
 /* Module */
 input#field_row_module_id__mdl_name {
-    background: darken(@theme-orange, 33%);
+	background: darken(@theme-orange, 33%);
 }
 
 /* table and coloumn names */
@@ -474,7 +479,7 @@ input#field_fld_dbname {
 }
 
 .btn-switch .slider {
-    border-color: @theme-color4;
+	border-color: @theme-color4;
 }
 
 .btn-switch input:checked + .slider {
@@ -619,7 +624,7 @@ input#field_fld_dbname {
 }
 
 .notepad.split .checklists {
-    border-right: solid .0625rem @theme-color4;
+	border-right: solid .0625rem @theme-color4;
 }
 
 .pillbox-completion > ul {
@@ -924,10 +929,10 @@ input#field_fld_dbname {
 		background: darken(@theme-color6, 10%);
 	}
 	.post.info {
-	    background: #555368;
+		background: #555368;
 	}
 	.post.act {
-    	border-top: none 0;
+		border-top: none 0;
 	}
 	.obj-summary .title {
 		background: @theme-color2;
@@ -972,7 +977,7 @@ input#field_fld_dbname {
 	}
 }
 
-.table.git-history > :not(caption) > * > * { /* override BS5 */
+.table.git-history > :not(caption) > * > * { /* BS5 override */
 	padding: 0;
 }
 .git-diff {
