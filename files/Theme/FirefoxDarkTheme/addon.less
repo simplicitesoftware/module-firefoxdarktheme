@@ -536,11 +536,16 @@ input#field_fld_dbname {
 	}
 }
 .tray .tray-item {
+	background-color:  @theme-color4;
 	.actors > .actor {
 		background: @theme-color5;
 		color: @theme-white;
 	}
-	/* TODO: hover background color */
+	&:hover {
+		.title, .actors {
+			background-color: @theme-color2 !important;
+		}
+	}
 }
 
 .export-data h3 {
@@ -1147,4 +1152,20 @@ input#field_fld_dbname {
 	.post.error {
 		background: darken(@theme-red, 25%);
 	}
+}
+
+/* DB access */
+
+#db-access {
+	th {
+		color: @theme-grey;
+		background: @theme-color2;
+	}
+}
+
+/* Others */
+
+.mentions {
+	background-color: inherit;
+	color: inherit;
 }
